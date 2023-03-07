@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:columnCount="3"
+    android:orientation="horizontal">
+
+    <TextView
+    	android:id="@+id/searchHeartDiseaseByAgeIdView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/searchHeartDiseaseByAgeAgeView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/searchHeartDiseaseByAgeSexView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/searchHeartDiseaseByAgeCpView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/searchHeartDiseaseByAgeTrestbpsView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/searchHeartDiseaseByAgeCholView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/searchHeartDiseaseByAgeFbsView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/searchHeartDiseaseByAgeRestecgView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/searchHeartDiseaseByAgeThalachView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/searchHeartDiseaseByAgeExangView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/searchHeartDiseaseByAgeOldpeakView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/searchHeartDiseaseByAgeSlopeView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/searchHeartDiseaseByAgeCaView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/searchHeartDiseaseByAgeThalView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+    	android:id="@+id/searchHeartDiseaseByAgeOutcomeView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="#99FFFF"
+    	android:textAppearance="?attr/textAppearanceListItem" />
+
+</GridLayout> 
+

@@ -1,0 +1,237 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context=".SearchHeartDiseaseByAgeFragment" >
+    
+
+    <TableRow>
+	     <TextView
+	         android:id="@+id/searchHeartDiseaseByAgeLabel"
+             android:textStyle="bold"
+             android:background="#EEFFBB"
+	         android:text="Age:" />
+	        
+	    <EditText
+	         android:id="@+id/searchHeartDiseaseByAgeField"
+			android:inputType="number|numberDecimal"
+	         android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+        <TextView
+            android:id="@+id/searchHeartDiseaseByAgeSpinnerLabel"
+            android:textStyle="bold"
+            android:background="#EEFFBB"
+            android:text="searchHeartDiseaseByAge:" />
+        <Spinner
+            android:id="@+id/searchHeartDiseaseByAgeSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="4" />
+        </TableRow>
+    <TableRow>
+      <TextView
+		   android:id="@+id/searchHeartDiseaseByAgeidLabel"
+		   android:textStyle="bold"
+		   android:background="#EEFFBB"
+		   android:text="Id:" />
+		
+	  <TextView
+		   android:id="@+id/searchHeartDiseaseByAgeidView"
+		   android:textStyle="bold"
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+      <TextView
+		   android:id="@+id/searchHeartDiseaseByAgeageLabel"
+		   android:textStyle="bold"
+		   android:background="#EEFFBB"
+		   android:text="Age:" />
+		
+	  <TextView
+		   android:id="@+id/searchHeartDiseaseByAgeageView"
+		   android:textStyle="bold"
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+      <TextView
+		   android:id="@+id/searchHeartDiseaseByAgesexLabel"
+		   android:textStyle="bold"
+		   android:background="#EEFFBB"
+		   android:text="Sex:" />
+		
+	  <TextView
+		   android:id="@+id/searchHeartDiseaseByAgesexView"
+		   android:textStyle="bold"
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+      <TextView
+		   android:id="@+id/searchHeartDiseaseByAgecpLabel"
+		   android:textStyle="bold"
+		   android:background="#EEFFBB"
+		   android:text="Cp:" />
+		
+	  <TextView
+		   android:id="@+id/searchHeartDiseaseByAgecpView"
+		   android:textStyle="bold"
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+      <TextView
+		   android:id="@+id/searchHeartDiseaseByAgetrestbpsLabel"
+		   android:textStyle="bold"
+		   android:background="#EEFFBB"
+		   android:text="Trestbps:" />
+		
+	  <TextView
+		   android:id="@+id/searchHeartDiseaseByAgetrestbpsView"
+		   android:textStyle="bold"
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+      <TextView
+		   android:id="@+id/searchHeartDiseaseByAgecholLabel"
+		   android:textStyle="bold"
+		   android:background="#EEFFBB"
+		   android:text="Chol:" />
+		
+	  <TextView
+		   android:id="@+id/searchHeartDiseaseByAgecholView"
+		   android:textStyle="bold"
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+      <TextView
+		   android:id="@+id/searchHeartDiseaseByAgefbsLabel"
+		   android:textStyle="bold"
+		   android:background="#EEFFBB"
+		   android:text="Fbs:" />
+		
+	  <TextView
+		   android:id="@+id/searchHeartDiseaseByAgefbsView"
+		   android:textStyle="bold"
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+      <TextView
+		   android:id="@+id/searchHeartDiseaseByAgerestecgLabel"
+		   android:textStyle="bold"
+		   android:background="#EEFFBB"
+		   android:text="Restecg:" />
+		
+	  <TextView
+		   android:id="@+id/searchHeartDiseaseByAgerestecgView"
+		   android:textStyle="bold"
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+      <TextView
+		   android:id="@+id/searchHeartDiseaseByAgethalachLabel"
+		   android:textStyle="bold"
+		   android:background="#EEFFBB"
+		   android:text="Thalach:" />
+		
+	  <TextView
+		   android:id="@+id/searchHeartDiseaseByAgethalachView"
+		   android:textStyle="bold"
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+      <TextView
+		   android:id="@+id/searchHeartDiseaseByAgeexangLabel"
+		   android:textStyle="bold"
+		   android:background="#EEFFBB"
+		   android:text="Exang:" />
+		
+	  <TextView
+		   android:id="@+id/searchHeartDiseaseByAgeexangView"
+		   android:textStyle="bold"
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+      <TextView
+		   android:id="@+id/searchHeartDiseaseByAgeoldpeakLabel"
+		   android:textStyle="bold"
+		   android:background="#EEFFBB"
+		   android:text="Oldpeak:" />
+		
+	  <TextView
+		   android:id="@+id/searchHeartDiseaseByAgeoldpeakView"
+		   android:textStyle="bold"
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+      <TextView
+		   android:id="@+id/searchHeartDiseaseByAgeslopeLabel"
+		   android:textStyle="bold"
+		   android:background="#EEFFBB"
+		   android:text="Slope:" />
+		
+	  <TextView
+		   android:id="@+id/searchHeartDiseaseByAgeslopeView"
+		   android:textStyle="bold"
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+      <TextView
+		   android:id="@+id/searchHeartDiseaseByAgecaLabel"
+		   android:textStyle="bold"
+		   android:background="#EEFFBB"
+		   android:text="Ca:" />
+		
+	  <TextView
+		   android:id="@+id/searchHeartDiseaseByAgecaView"
+		   android:textStyle="bold"
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+      <TextView
+		   android:id="@+id/searchHeartDiseaseByAgethalLabel"
+		   android:textStyle="bold"
+		   android:background="#EEFFBB"
+		   android:text="Thal:" />
+		
+	  <TextView
+		   android:id="@+id/searchHeartDiseaseByAgethalView"
+		   android:textStyle="bold"
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+      <TextView
+		   android:id="@+id/searchHeartDiseaseByAgeoutcomeLabel"
+		   android:textStyle="bold"
+		   android:background="#EEFFBB"
+		   android:text="Outcome:" />
+		
+	  <TextView
+		   android:id="@+id/searchHeartDiseaseByAgeoutcomeView"
+		   android:textStyle="bold"
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+        <Button
+            android:id="@+id/searchHeartDiseaseByAgeOK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:background="#AAAAFF"
+            android:text="OK"
+            android:onClick="searchHeartDiseaseByAgeOK"
+            />
+        <Button
+            android:id="@+id/searchHeartDiseaseByAgeCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:background="#FFAAAA"
+            android:text="Cancel"
+            android:onClick="searchHeartDiseaseByAgeCancel"
+            />
+    </TableRow>
+</TableLayout>
+</ScrollView>

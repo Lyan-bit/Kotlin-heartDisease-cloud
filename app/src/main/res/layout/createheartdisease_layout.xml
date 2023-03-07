@@ -1,0 +1,224 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context=".CreateHeartDiseaseFragment" >
+
+    <TableRow>
+		      <TextView
+				   android:id="@+id/crudHeartDiseaseidLabel"
+				   android:textStyle="bold"
+				   android:background="#EEFFBB"
+				   android:text="Id:" />
+				
+	  <EditText
+		   android:id="@+id/crudHeartDiseaseidField"
+
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+		      <TextView
+				   android:id="@+id/crudHeartDiseaseageLabel"
+				   android:textStyle="bold"
+				   android:background="#EEFFBB"
+				   android:text="Age:" />
+				
+	  <EditText
+		   android:id="@+id/crudHeartDiseaseageField"
+		android:inputType="number|numberDecimal"
+
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+		      <TextView
+				   android:id="@+id/crudHeartDiseasesexLabel"
+				   android:textStyle="bold"
+				   android:background="#EEFFBB"
+				   android:text="Sex:" />
+				
+	  <EditText
+		   android:id="@+id/crudHeartDiseasesexField"
+		android:inputType="number|numberDecimal"
+
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+		      <TextView
+				   android:id="@+id/crudHeartDiseasecpLabel"
+				   android:textStyle="bold"
+				   android:background="#EEFFBB"
+				   android:text="Cp:" />
+				
+	  <EditText
+		   android:id="@+id/crudHeartDiseasecpField"
+		android:inputType="number|numberDecimal"
+
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+		      <TextView
+				   android:id="@+id/crudHeartDiseasetrestbpsLabel"
+				   android:textStyle="bold"
+				   android:background="#EEFFBB"
+				   android:text="Trestbps:" />
+				
+	  <EditText
+		   android:id="@+id/crudHeartDiseasetrestbpsField"
+		android:inputType="number|numberDecimal"
+
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+		      <TextView
+				   android:id="@+id/crudHeartDiseasecholLabel"
+				   android:textStyle="bold"
+				   android:background="#EEFFBB"
+				   android:text="Chol:" />
+				
+	  <EditText
+		   android:id="@+id/crudHeartDiseasecholField"
+		android:inputType="number|numberDecimal"
+
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+		      <TextView
+				   android:id="@+id/crudHeartDiseasefbsLabel"
+				   android:textStyle="bold"
+				   android:background="#EEFFBB"
+				   android:text="Fbs:" />
+				
+	  <EditText
+		   android:id="@+id/crudHeartDiseasefbsField"
+		android:inputType="number|numberDecimal"
+
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+		      <TextView
+				   android:id="@+id/crudHeartDiseaserestecgLabel"
+				   android:textStyle="bold"
+				   android:background="#EEFFBB"
+				   android:text="Restecg:" />
+				
+	  <EditText
+		   android:id="@+id/crudHeartDiseaserestecgField"
+		android:inputType="number|numberDecimal"
+
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+		      <TextView
+				   android:id="@+id/crudHeartDiseasethalachLabel"
+				   android:textStyle="bold"
+				   android:background="#EEFFBB"
+				   android:text="Thalach:" />
+				
+	  <EditText
+		   android:id="@+id/crudHeartDiseasethalachField"
+		android:inputType="number|numberDecimal"
+
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+		      <TextView
+				   android:id="@+id/crudHeartDiseaseexangLabel"
+				   android:textStyle="bold"
+				   android:background="#EEFFBB"
+				   android:text="Exang:" />
+				
+	  <EditText
+		   android:id="@+id/crudHeartDiseaseexangField"
+		android:inputType="number|numberDecimal"
+
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+		      <TextView
+				   android:id="@+id/crudHeartDiseaseoldpeakLabel"
+				   android:textStyle="bold"
+				   android:background="#EEFFBB"
+				   android:text="Oldpeak:" />
+				
+	  <EditText
+		   android:id="@+id/crudHeartDiseaseoldpeakField"
+		android:inputType="number|numberDecimal"
+
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+		      <TextView
+				   android:id="@+id/crudHeartDiseaseslopeLabel"
+				   android:textStyle="bold"
+				   android:background="#EEFFBB"
+				   android:text="Slope:" />
+				
+	  <EditText
+		   android:id="@+id/crudHeartDiseaseslopeField"
+		android:inputType="number|numberDecimal"
+
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+		      <TextView
+				   android:id="@+id/crudHeartDiseasecaLabel"
+				   android:textStyle="bold"
+				   android:background="#EEFFBB"
+				   android:text="Ca:" />
+				
+	  <EditText
+		   android:id="@+id/crudHeartDiseasecaField"
+		android:inputType="number|numberDecimal"
+
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+		      <TextView
+				   android:id="@+id/crudHeartDiseasethalLabel"
+				   android:textStyle="bold"
+				   android:background="#EEFFBB"
+				   android:text="Thal:" />
+				
+	  <EditText
+		   android:id="@+id/crudHeartDiseasethalField"
+		android:inputType="number|numberDecimal"
+
+		   android:layout_span="4" />
+	</TableRow>	
+    <TableRow>
+				      <TextView
+						   android:id="@+id/crudHeartDiseaseoutcomeLabel"
+								   android:textStyle="bold"
+						   android:background="#EEFFBB"
+						   android:text="Outcome:" />
+						
+			  <TextView
+				   android:id="@+id/crudHeartDiseaseoutcomeView"
+				   android:textStyle="bold"
+				   android:layout_span="4" />
+			</TableRow>	
+	<TableRow>
+	  <Button
+		   android:id="@+id/crudHeartDiseaseOK"
+		   android:layout_width="wrap_content"
+		   android:layout_height="wrap_content"
+		   android:layout_column="1"
+		   android:background="#AAAAFF"
+		   android:text="OK"
+		   android:onClick="crudHeartDiseaseOK"/>
+	  <Button
+		   android:id="@+id/crudHeartDiseaseCancel"
+		   android:layout_width="wrap_content"
+		   android:layout_height="wrap_content"
+		   android:layout_column="3"
+		   android:background="#FFAAAA"
+		   android:text="Cancel"
+		   android:onClick="crudHeartDiseaseCancel"/>
+	 </TableRow>		
+
+</TableLayout>
+</ScrollView>
