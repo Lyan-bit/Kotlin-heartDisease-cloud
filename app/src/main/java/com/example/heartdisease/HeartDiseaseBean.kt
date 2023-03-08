@@ -213,7 +213,7 @@ class HeartDiseaseBean(c: Context) {
        errors.clear()
 			
 			if (!allHeartDiseaseids.contains(id)) {
-				errors.add("The id" + checkParameter)
+				errors.add("id" + checkParameter)
 		    }
           if (id != "") {
 	//validate
@@ -298,7 +298,7 @@ class HeartDiseaseBean(c: Context) {
    fun isDeleteHeartDiseaseError(allHeartDiseaseids: List<String>): Boolean {
         errors.clear()
 			 if (!allHeartDiseaseids.contains(id)) {
-			    errors.add("The id" + checkParameter)
+			    errors.add("id" + checkParameter)
         }
         return errors.size > 0
 		}    
@@ -306,7 +306,7 @@ class HeartDiseaseBean(c: Context) {
    	fun isSearchHeartDiseaseError(allHeartDiseaseages: List<String>): Boolean {
         errors.clear()
         if (!allHeartDiseaseages.contains(age)) {
-            errors.add("The age" + checkParameter)
+            errors.add("age" + checkParameter)
         }
         return errors.size > 0
     }
@@ -314,7 +314,7 @@ class HeartDiseaseBean(c: Context) {
 		fun isSearchHeartDiseaseIdError(allHeartDiseaseIds: List<String>): Boolean {
     	   errors.clear()
    	       if (!allHeartDiseaseIds.contains(id)) {
-    	       errors.add("The id" + checkParameter)
+    	       errors.add("id" + checkParameter)
     	   }
            return errors.size > 0
     }
