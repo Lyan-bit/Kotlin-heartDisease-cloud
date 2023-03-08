@@ -38,6 +38,7 @@ class FirebaseDB() {
                     locals.addAll(HeartDisease.HeartDiseaseAllInstances)
                     for (x in locals) {
                         if (keys.contains(x.id)) {
+                            //check
                         } else {
                             HeartDisease.killHeartDisease(x.id)
                         }
