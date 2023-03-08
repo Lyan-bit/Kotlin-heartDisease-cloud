@@ -133,6 +133,7 @@ class HeartDiseaseDAO {
                         }
                     }
                 } catch (e: Exception) {
+                    e.printStackTrace()
                 }
             }
             return res
@@ -206,7 +207,8 @@ class HeartDiseaseDAO {
                 } else {
                     try {
                         result.put(jx)
-                    } catch (ee: Exception) {
+                    } catch (e: Exception) {
+                        e.printStackTrace()
                     }
                 }
             }
