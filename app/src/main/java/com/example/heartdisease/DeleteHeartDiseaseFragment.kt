@@ -84,15 +84,15 @@ class DeleteHeartDiseaseFragment : Fragment(), View.OnClickListener, AdapterView
 
 	when (v?.id) {
 		R.id.crudHeartDiseaseOK-> {
-			crudHeartDiseaseOK()
+			deleteHeartDiseaseOK()
 		}
 		R.id.crudHeartDiseaseCancel-> {
-			crudHeartDiseaseCancel()
+			deleteHeartDiseaseCancel()
 		}
 	  }
     }
 
-	private fun crudHeartDiseaseOK() {
+	private fun deleteHeartDiseaseOK() {
 		idData = idTextField.text.toString()
 		heartDiseaseBean.setId(idData)
 		if (heartDiseaseBean.isDeleteHeartDiseaseError(allHeartDiseaseids)) {
@@ -104,7 +104,7 @@ class DeleteHeartDiseaseFragment : Fragment(), View.OnClickListener, AdapterView
 		}
 	}
 
-	private fun crudHeartDiseaseCancel() {
+	private fun deleteHeartDiseaseCancel() {
 		heartDiseaseBean.resetData()
 		idTextField.setText("")
 	}
