@@ -110,15 +110,15 @@ class CreateHeartDiseaseFragment : Fragment(), View.OnClickListener {
 		}
 		when (v?.id) {
 			R.id.crudHeartDiseaseOK-> {
-				crudHeartDiseaseOK()
+				createHeartDiseaseOK()
 			}
 			R.id.crudHeartDiseaseCancel-> {
-				crudHeartDiseaseCancel()
+				createHeartDiseaseCancel()
 			}
 		}
 	}
 
-	private fun crudHeartDiseaseOK () {
+	private fun createHeartDiseaseOK () {
 		idData = idTextField.text.toString()
 		heartDiseaseBean.setId(idData)
 		ageData = ageTextField.text.toString()
@@ -159,7 +159,7 @@ class CreateHeartDiseaseFragment : Fragment(), View.OnClickListener {
 			}
 	}
 
-	private fun crudHeartDiseaseCancel () {
+	private fun createHeartDiseaseCancel () {
 		heartDiseaseBean.resetData()
 		idTextField.setText("")
 		ageTextField.setText("")
