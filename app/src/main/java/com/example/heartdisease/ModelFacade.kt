@@ -33,12 +33,6 @@ class ModelFacade private constructor(context: Context) {
         }
     }
     
-	/* This metatype code requires OclType.java, OclAttribute.java, OclOperation.java */
-	fun initialiseOclTypes() {
-			val heartDiseaseOclType: OclType = OclType.createByPKOclType("HeartDisease")
-		heartDiseaseOclType.setMetatype(HeartDisease::class.java)
-		    }
-    
     fun createHeartDisease(x: HeartDiseaseVO) { 
 			  editHeartDisease(x)
 	}
