@@ -71,7 +71,7 @@ class HeartDiseaseDAO {
                 null
             } else try {
                 val id = obj.getString("id")
-                var heartDiseasex: HeartDisease? = HeartDisease.HeartDiseaseIndex.get(id)
+                var heartDiseasex: HeartDisease? = HeartDisease.HeartDiseaseIndex[id]
                 if (heartDiseasex == null) {
                     heartDiseasex = HeartDisease.createByPKHeartDisease(id)
                 }
@@ -172,7 +172,7 @@ class HeartDiseaseDAO {
             try {
                 val map = obj as HashMap<String, Object>
                 val id: String = map["id"].toString()
-                var heartDiseasex: HeartDisease? = HeartDisease.HeartDiseaseIndex.get(id)
+                var heartDiseasex: HeartDisease? = HeartDisease.HeartDiseaseIndex[id]
                 if (heartDiseasex == null) {
                     heartDiseasex = HeartDisease.createByPKHeartDisease(id)
                 }
