@@ -11,21 +11,24 @@ class PagerAdapter(private val mContext: Context, fm: FragmentManager) : Fragmen
         private val TABTITLES = arrayOf("+HeartDisease", "ListHeartDisease", "EditHeartDisease", "DeleteHeartDisease", "SearchHeartDiseaseByAgeage", "ClassifyHeartDisease")
     }
 
-    override fun getItem(position: Int): Fragment {
+     override fun getItem(position: Int): Fragment {
         // instantiate a fragment for the page.
-        if (position == 0) {
-            return CreateHeartDiseaseFragment.newInstance(mContext)    } 
-        else if (position == 1) {
-            return ListHeartDiseaseFragment.newInstance(mContext)    } 
-        else if (position == 2) {
-            return EditHeartDiseaseFragment.newInstance(mContext)    } 
-        else if (position == 3) {
-            return DeleteHeartDiseaseFragment.newInstance(mContext)    } 
-        else if (position == 4) {
-            return SearchHeartDiseaseByAgeageFragment.newInstance(mContext)    } 
-        else if (position == 5) {
-            return ClassifyHeartDiseaseFragment.newInstance(mContext)    } 
-        return CreateHeartDiseaseFragment.newInstance(mContext) 
+            return when (position) {
+                0 -> { 
+                    CreateHeartDiseaseFragment.newInstance(mContext) 
+                }            1 -> { 
+                    ListHeartDiseaseFragment.newInstance(mContext) 
+                }            2 -> { 
+                    EditHeartDiseaseFragment.newInstance(mContext) 
+                }            3 -> { 
+                    DeleteHeartDiseaseFragment.newInstance(mContext) 
+                }            4 -> { 
+                    SearchHeartDiseaseByAgeageFragment.newInstance(mContext) 
+                }            5 -> { 
+                    ClassifyHeartDiseaseFragment.newInstance(mContext) 
+                }
+                else -> CreateHeartDiseaseFragment.newInstance(mContext) 
+             }
     }
 
     override fun getPageTitle(position: Int): CharSequence {
