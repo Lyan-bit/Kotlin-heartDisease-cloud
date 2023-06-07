@@ -111,7 +111,7 @@ class ModelFacade private constructor(context: Context) {
 	}
 		
     fun classifyHeartDisease(heartDisease: HeartDisease) : String {
-	    var result = ""
+	    var result : String
 		lateinit var tflite : Interpreter
 	    lateinit var tflitemodel : ByteBuffer
 	
