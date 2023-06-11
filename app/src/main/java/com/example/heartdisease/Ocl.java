@@ -11,6 +11,7 @@ package com.example.heartdisease; // Place in the relevant package directory of 
 * *****************************/
 /* OCL library for Java version 8+ */
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Ocl {
