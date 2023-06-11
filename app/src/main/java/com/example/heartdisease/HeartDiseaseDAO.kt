@@ -42,7 +42,7 @@ class HeartDiseaseDAO {
           if (line == null) {
               return null
           }
-          val line1vals: ArrayList<String> = Ocl.tokeniseCSV(line)
+          val line1vals: List<String> = Ocl.tokeniseCSV(line)
           var heartDiseasex: HeartDisease? = HeartDisease.HeartDiseaseIndex[line1vals[0]]
           if (heartDiseasex == null) {
               heartDiseasex = HeartDisease.createByPKHeartDisease(line1vals[0])
@@ -101,7 +101,7 @@ class HeartDiseaseDAO {
           if (lines == null) {
               return result
           }
-          val rows: ArrayList<String> = Ocl.parseCSVtable(lines)
+          val rows: List<String> = Ocl.parseCSVtable(lines)
           for (item in rows.indices) {
               val row = rows[item]
               if (row == null || row.trim { it <= ' ' }.isNotEmpty()) {
