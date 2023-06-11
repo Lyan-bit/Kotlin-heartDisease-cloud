@@ -38,26 +38,26 @@ class ModelFacade private constructor(context: Context) {
 	}
 				    
     fun editHeartDisease(x: HeartDiseaseVO) {
-		var obj = getHeartDiseaseByPK(x.getId())
+		var obj = getHeartDiseaseByPK(x.id)
 		if (obj == null) {
-			obj = HeartDisease.createByPKHeartDisease(x.getId())
+			obj = HeartDisease.createByPKHeartDisease(x.id)
 		}
 			
-		  obj.id = x.getId()
-		  obj.age = x.getAge()
-		  obj.sex = x.getSex()
-		  obj.cp = x.getCp()
-		  obj.trestbps = x.getTrestbps()
-		  obj.chol = x.getChol()
-		  obj.fbs = x.getFbs()
-		  obj.restecg = x.getRestecg()
-		  obj.thalach = x.getThalach()
-		  obj.exang = x.getExang()
-		  obj.oldpeak = x.getOldpeak()
-		  obj.slope = x.getSlope()
-		  obj.ca = x.getCa()
-		  obj.thal = x.getThal()
-		  obj.outcome = x.getOutcome()
+		  obj.id = x.id
+		  obj.age = x.age
+		  obj.sex = x.sex
+		  obj.cp = x.cp
+		  obj.trestbps = x.trestbps
+		  obj.chol = x.chol
+		  obj.fbs = x.fbs
+		  obj.restecg = x.restecg
+		  obj.thalach = x.thalach
+		  obj.exang = x.exang
+		  obj.oldpeak = x.oldpeak
+		  obj.slope = x.slope
+		  obj.ca = x.ca
+		  obj.thal = x.thal
+		  obj.outcome = x.outcome
 		cdb.persistHeartDisease(obj)
 		currentHeartDisease = x
 	}
@@ -77,24 +77,24 @@ class ModelFacade private constructor(context: Context) {
     fun searchHeartDiseaseByAge(age: Int) : ArrayList<HeartDisease> {
 			var itemsList = ArrayList<HeartDisease>()
 			for (x in currentHeartDiseases.indices) {
-				if ( currentHeartDiseases[x].getAge() == age) {
+				if ( currentHeartDiseases[x].age == age) {
 					val vo: HeartDiseaseVO = currentHeartDiseases[x]
-				    val itemx = HeartDisease.createByPKHeartDisease(vo.getId())
-	            itemx.id = vo.getId()
-            itemx.age = vo.getAge()
-            itemx.sex = vo.getSex()
-            itemx.cp = vo.getCp()
-            itemx.trestbps = vo.getTrestbps()
-            itemx.chol = vo.getChol()
-            itemx.fbs = vo.getFbs()
-            itemx.restecg = vo.getRestecg()
-            itemx.thalach = vo.getThalach()
-            itemx.exang = vo.getExang()
-            itemx.oldpeak = vo.getOldpeak()
-            itemx.slope = vo.getSlope()
-            itemx.ca = vo.getCa()
-            itemx.thal = vo.getThal()
-            itemx.outcome = vo.getOutcome()
+				    val itemx = HeartDisease.createByPKHeartDisease(vo.id)
+	            itemx.id = vo.id
+            itemx.age = vo.age
+            itemx.sex = vo.sex
+            itemx.cp = vo.cp
+            itemx.trestbps = vo.trestbps
+            itemx.chol = vo.chol
+            itemx.fbs = vo.fbs
+            itemx.restecg = vo.restecg
+            itemx.thalach = vo.thalach
+            itemx.exang = vo.exang
+            itemx.oldpeak = vo.oldpeak
+            itemx.slope = vo.slope
+            itemx.ca = vo.ca
+            itemx.thal = vo.thal
+            itemx.outcome = vo.outcome
 					itemsList.add(itemx)
 				}
 			}
@@ -105,7 +105,7 @@ class ModelFacade private constructor(context: Context) {
 	fun searchHeartDiseaseByAge(): ArrayList<String> {
 		val res: ArrayList<String> = ArrayList()
 		for (x in currentHeartDiseases.indices) {
-			res.add(currentHeartDiseases[x].getAge().toString())
+			res.add(currentHeartDiseases[x].age.toString())
 		}
 		return res
 	}
@@ -244,7 +244,7 @@ class ModelFacade private constructor(context: Context) {
     fun allHeartDiseaseIds(): ArrayList<String> {
         val res: ArrayList<String> = ArrayList()
             for (x in currentHeartDiseases.indices) {
-                res.add(currentHeartDiseases[x].getId())
+                res.add(currentHeartDiseases[x].id)
             }
         return res
     }
