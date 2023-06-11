@@ -55,7 +55,7 @@ class FirebaseDB() {
 
     fun persistHeartDisease(ex: HeartDisease) {
         val evo = HeartDiseaseVO(ex)
-        val key = evo.getId()
+        val key = evo.id
         if (database == null) {
             return
         }
