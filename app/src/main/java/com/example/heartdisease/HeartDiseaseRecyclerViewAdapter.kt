@@ -25,21 +25,21 @@ class HeartDiseaseRecyclerViewAdapter (items: List<HeartDiseaseVO>, listener: Li
     @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: HeartDiseaseViewHolder, position: Int) {
         holder.mItem = mValues[position]
-        holder.searchHeartDiseaseByAgeIdView.text = " " + mValues[position].getId() + " "
-        holder.searchHeartDiseaseByAgeAgeView.text = " " + mValues[position].getAge() + " "
-        holder.searchHeartDiseaseByAgeSexView.text = " " + mValues[position].getSex() + " "
-        holder.searchHeartDiseaseByAgeCpView.text = " " + mValues[position].getCp() + " "
-        holder.searchHeartDiseaseByAgeTrestbpsView.text = " " + mValues[position].getTrestbps() + " "
-        holder.searchHeartDiseaseByAgeCholView.text = " " + mValues[position].getChol() + " "
-        holder.searchHeartDiseaseByAgeFbsView.text = " " + mValues[position].getFbs() + " "
-        holder.searchHeartDiseaseByAgeRestecgView.text = " " + mValues[position].getRestecg() + " "
-        holder.searchHeartDiseaseByAgeThalachView.text = " " + mValues[position].getThalach() + " "
-        holder.searchHeartDiseaseByAgeExangView.text = " " + mValues[position].getExang() + " "
-        holder.searchHeartDiseaseByAgeOldpeakView.text = " " + mValues[position].getOldpeak() + " "
-        holder.searchHeartDiseaseByAgeSlopeView.text = " " + mValues[position].getSlope() + " "
-        holder.searchHeartDiseaseByAgeCaView.text = " " + mValues[position].getCa() + " "
-        holder.searchHeartDiseaseByAgeThalView.text = " " + mValues[position].getThal() + " "
-        holder.searchHeartDiseaseByAgeOutcomeView.text = " " + mValues[position].getOutcome() + " "
+        holder.searchHeartDiseaseByAgeIdView.text = " " + mValues[position].id + " "
+        holder.searchHeartDiseaseByAgeAgeView.text = " " + mValues[position].age + " "
+        holder.searchHeartDiseaseByAgeSexView.text = " " + mValues[position].sex + " "
+        holder.searchHeartDiseaseByAgeCpView.text = " " + mValues[position].cp + " "
+        holder.searchHeartDiseaseByAgeTrestbpsView.text = " " + mValues[position].trestbps + " "
+        holder.searchHeartDiseaseByAgeCholView.text = " " + mValues[position].chol + " "
+        holder.searchHeartDiseaseByAgeFbsView.text = " " + mValues[position].fbs + " "
+        holder.searchHeartDiseaseByAgeRestecgView.text = " " + mValues[position].restecg + " "
+        holder.searchHeartDiseaseByAgeThalachView.text = " " + mValues[position].thalach + " "
+        holder.searchHeartDiseaseByAgeExangView.text = " " + mValues[position].exang + " "
+        holder.searchHeartDiseaseByAgeOldpeakView.text = " " + mValues[position].oldpeak + " "
+        holder.searchHeartDiseaseByAgeSlopeView.text = " " + mValues[position].slope + " "
+        holder.searchHeartDiseaseByAgeCaView.text = " " + mValues[position].ca + " "
+        holder.searchHeartDiseaseByAgeThalView.text = " " + mValues[position].thal + " "
+        holder.searchHeartDiseaseByAgeOutcomeView.text = " " + mValues[position].outcome + " "
 
         holder.mView.setOnClickListener { mListener.onListHeartDiseaseFragmentInteraction(holder.mItem) }
     }
